@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="stdObj" class="com.bhagat.hritu.dto.StudentDTO">
+<property name="name"><value>hritu</value></property>
+<property name="age"><value>30</value></property>
+<property name="address"><ref bean="addr"/></property>
+</bean>
+
+<bean id="addr" class="com.bhagat.hritu.dto.AddressDTO">
+<property name="street"><value>Lohiya marg</value></property>
+<property name="city"><value>Shujalpur</value></property>
+<property name="pin"><value>465333</value></property>
+</bean>
+
+</beans>
