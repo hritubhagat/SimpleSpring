@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+     <hibernate-mapping>
+     	<class name="com.hritu.dto.AccountDTO" table="account" dynamic-update="true">
+     		<id name="id" column="ID" >
+    			<generator class="native"></generator>
+    		</id>
+    		<property name="name" type="java.lang.String" column="NAME" length="50" >
+    		</property>
+    		<property name="number" type="java.lang.String" column="NUMBER" length="50" >
+    		</property>
+    		<property name="balance" column="BALANCE" >
+    		</property>
+    		
+    	</class>
+     </hibernate-mapping>
